@@ -1,0 +1,172 @@
+body {
+  background-color: rgba(236, 226, 226, 0.795);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    line-height: 1,3rem;
+    margin: 0;
+}
+header{
+    max-width: 2000px;
+    min-width: 100;
+    margin: 5px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: rgb(16, 22, 22);
+    background-image: url(Logos/fondo1.jpg); 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    /* cabecera fija (no se utilizó en esta página):
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%; */
+}
+/* .container {
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto; */
+
+/* Configuración de los links del encabezado(se combina con el código que está más abajo. ¿Hay información superpuesta o duplicada?:  */
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+    .navigation ul li{
+      display: inline-block;
+    }
+        .navigation ul li a{
+            display: block;
+            padding: 0.5rem 1rem;
+            transition: all 0.4s linear;
+            border-radius: 5px;
+
+        }
+          
+/* se le pone padding al main para que no se superponga con la cabecera flotante */
+.main{
+    padding-top: 3rem;
+    font-size: 15px;
+    border-radius: 20px 20px 20px 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    background-position:center center; /*respecto a body*/
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    min-height: 100%;
+    min-width: 100%;
+    
+}
+
+/* configuración del logo en el encabezado:  */
+#logo {
+    width: 88px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#títuloprincipal {
+    margin-top: 0;
+    margin-left: 150px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 70px;
+    text-shadow: 2px 2px 2px rgb(80, 88, 81);  
+  
+}
+
+
+.queeslahidromiel{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  padding: 10px 10px 10px 10px;
+  text-align: justify;  
+  text-indent: -30px;
+  position: absolute;
+  padding-left: 40px
+
+}
+#textoqueeslahidromiel{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 10px 60px 60px 60px;
+  font-size: 20px;
+  padding-top: 40px;
+  text-align: justify;  
+  text-indent: 40px;
+  position: absolute;
+}
+
+
+/* Configuración de los links del encabezado(colores):  */
+
+  p {
+    line-height: 1.4;
+  }
+  
+  a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+    display: inline;
+  }
+  
+  a:link {
+    color: #265301;
+  }
+  
+  a:visited {
+    color: #437A16; 
+  }
+  
+  a:focus {
+    border-bottom: 3px solid;
+    background: #BAE498;
+  }
+  
+  a:hover {
+    border-bottom: 3px solid;
+    background: #CDFEAA;
+  }
+  
+  a:active {
+    background: #265301;
+    color: #CDFEAA;
+  }
+
+.footer{
+  font-size: small;
+  background: rgb(228, 214, 195);
+  border-radius: 10px;
+  text-align: center; 
+
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 6rem;
+  position: relative;
+  bottom: 0;
+}
+    
+@media screen and (max-width: 569px) {
+ 
+  .titulohidro{
+    color: transparent;
+    display: none;
+    
+  }
+  .header{
+    width: 100%;
+  
+  }
+  
+  #logo {
+    width: 15%;
+    box
+  }
+  
+}
